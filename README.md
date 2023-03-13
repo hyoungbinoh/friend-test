@@ -1,5 +1,9 @@
 # friends-test
 
+> ##### Javascript, React, Redux 등을 활용한 사이드 프로젝트 진행
+![friendtest](https://user-images.githubusercontent.com/108599126/224625387-e359ea90-7025-4b36-b6f5-00b1fd1cdfba.JPG)
+##### URL: https://friendstest-f96d2.web.app/
+
 ### 1. 개발목표   
 * 회사에서 M2E 프로토타입 홈페이지를 만들기 전, 연습을 위해 제작한 사이드 프로젝트   
 * 강의를 통해 배운 react.js를 복습하고 응용하는데 목표를 둠
@@ -10,7 +14,7 @@
 <br/><br/>
 
 ### 3. 사용기술
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Styled--Components-DB7093?style=flat&logo=styled-components&logoColor=black"> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Styled--Components-DB7093?style=flat&logo=styled-components&logoColor=white"> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black">
 <br/><br/>
 
 ### 4. 구현기능 
