@@ -19,6 +19,7 @@
 
 ### 4. 구현기능 
 * Async를 활용한 Firebase와의 통신
+<img src="https://user-images.githubusercontent.com/108599126/224646141-89359f18-2cf8-4e5f-b3e1-c9ee08c43c8c.JPG" width="630" height="340">
 * Redux를 활용한 전역 상태 관리
 <br/><br/>
 
