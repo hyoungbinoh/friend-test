@@ -18,7 +18,7 @@
 <br/><br/>
 
 ### 4. 구현기능 
-* Async, Await를 활용한 Firebase와의 통신
+* Async, Await를 활용한 Firebase와의 비동기 통신 처리
 <img src="https://user-images.githubusercontent.com/108599126/224647007-33316b2a-0003-4195-94cf-8ef4546b4b68.JPG" width="630" height="340">
 
 ```
