@@ -1,32 +1,33 @@
-
 import React from 'react';
 import styled from 'styled-components';
-import {Route} from "react-router-dom";
+import { Route } from "react-router-dom";
+import { useSelector } from "react-redux"
 
-import Start from './Start';
-import Quiz from './Quiz';
-import Score from './Score';
-import Message from './Message';
-import Ranking from './Ranking';
+import Start from './component/Start';
+import Quiz from './component/Quiz';
+import Score from './component/Score';
+import Message from './component/Message';
+import Ranking from './component/Ranking';
 
 function App() {
-  const[name, setName] = React.useState("오형빈")
+  const name = useSelector(state => state.quiz.quiz_name);
+
   return (
     <Container>
       <Route path="/" exact>
-        <Start name={name}/>
+        <Start name={name} />
       </Route>
       <Route path="/quiz">
-        <Quiz/>
+        <Quiz />
       </Route>
       <Route path="/score">
-        <Score name={name}/>
+        <Score name={name} />
       </Route>
       <Route path="/message">
-        <Message name={name}/>
+        <Message name={name} />
       </Route>
       <Route path="/ranking">
-        <Ranking name={name}/>
+        <Ranking name={name} />
       </Route>
     </Container>
   );
@@ -37,7 +38,7 @@ margin: 0;
 padding: 0;
 width: 100%;
 height: 100vh;
-background-color: #eee;
+background-color: #fefefe;
 display: flex;
 justify-content: center;
 align-items: center;

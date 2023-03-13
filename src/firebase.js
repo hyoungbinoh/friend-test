@@ -1,23 +1,16 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore"
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC58aq1z04fj3nKhnY9eaHbMDZfJFKW8Qk",
-  authDomain: "sparta-react-basic-re.firebaseapp.com",
-  projectId: "sparta-react-basic-re",
-  storageBucket: "sparta-react-basic-re.appspot.com",
-  messagingSenderId: "245802630509",
-  appId: "1:245802630509:web:f0434ab6dda6564f8cae64",
-  measurementId: "G-W3B8MEH9RW"
+  apiKey: "AIzaSyAijiL4ZyKt8ccxKrs6oMVuJdWv1E5XZMc",
+  authDomain: "friendstest-f96d2.firebaseapp.com",
+  projectId: "friendstest-f96d2",
+  storageBucket: "friendstest-f96d2.appspot.com",
+  messagingSenderId: "726571177272",
+  appId: "1:726571177272:web:a8770ce9ab9cd57fcfddcd"
 };
 
-// Initialize Firebase
 initializeApp(firebaseConfig);
 const db = getFirestore();
 
-export {db};
+export { db };
