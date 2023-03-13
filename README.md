@@ -21,8 +21,67 @@
 * Async를 활용한 Firebase와의 통신
 <img src="https://user-images.githubusercontent.com/108599126/224646141-89359f18-2cf8-4e5f-b3e1-c9ee08c43c8c.JPG" width="630" height="340">
 
+```
+const initialState = {
+    ranking: []
+}
+
+export const loadRankFB = () => {
+    return async function (dispatch) {
+        const ranking_data = await getDocs(collection(db, "ranking"));
+        let ranking_list = [];
+        ranking_data.forEach((r) => {
+            ranking_list.push({ ...r.data() });
+        });
+        dispatch(loadRank(ranking_list));
+    }
+}
+
+// 이하 
+```
+
 * Redux를 활용한 전역 상태 관리
 <img src="https://user-images.githubusercontent.com/108599126/224647007-33316b2a-0003-4195-94cf-8ef4546b4b68.JPG" width="630" height="340">
+
+```
+const initialState = {
+    quiz_name: "오형빈",
+    quiz_list: [
+        {question:"오형빈은 웹디자이너 일을 했다.", answer: false},
+        {question:"오형빈은 개발자가 되고자 한다.", answer: true},
+        {question:"오형빈은 지리학과를 전공하였다.", answer: false},
+        {question:"오형빈의 고향은 서울이다.", answer: true}
+    ],
+    user_answer_list: [],
+}
+
+export const getQuiz = (quiz_list) => {
+    return{type: GET_QUIZ, quiz_list}
+};
+
+export const addAnswer = (user_answer) => {
+    return{ type: ADD_ANSWER, user_answer }
+}
+
+export const resetAnswer = () => {
+    return{type: RESET_ANSWER}
+};
+
+export default function reducer(state = initialState, action = {}) {
+    switch(action.type) {
+        case "quiz/GET_QUIZ": {
+            return {...state, quiz: action.quiz_list}
+        }
+            
+        case "quiz/ADD_ANSWER": {
+            const new_user_answer_list = [...state.user_answer_list, action.user_answer]
+            return {...state, user_answer_list: new_user_answer_list}
+        }
+        default:
+            return state;
+    }
+}
+```
 <br/><br/>
 
 ### 5. 문제해결
