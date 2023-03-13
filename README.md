@@ -82,7 +82,6 @@ export default function reducer(state = initialState, action = {}) {
     }
 }
 ```
-<br/><br/>
 
 ### 5. 문제해결
 * 리덕스 사용시 리듀서 함수를 입력할 때 에러가 나는 현상이 있었고, 구글링 결과 state와 action의 기본값을 입력해줘야 한다는 점을 알게 되어 입력하여 해결하였습니다.
