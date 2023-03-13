@@ -36,8 +36,6 @@ export const loadRankFB = () => {
         dispatch(loadRank(ranking_list));
     }
 }
-
-// 이하 
 ```
 
 * Redux를 활용한 전역 상태 관리
